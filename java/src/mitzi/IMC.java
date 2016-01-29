@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package java;
+package mitzi;
 
 
  /*
@@ -29,7 +29,7 @@ public class IMC {
     
 
      public String calcular(){
-         float imc=(peso/altura*altura);
+         float imc=peso/(altura*altura);
                 return "Tu imc es:" +imc;
 }
 
