@@ -11,9 +11,12 @@ package capitulo5.excepciones;
  */
 public class ValidarEdad {
  
-    public void checarEdadNegativa(int edad) throws  ValorNegativoException{
+    public static void checarEdadNegativa(int edad) throws  ValorNegativoException{
   if(edad<0)throw new ValorNegativoException();
-        
+    }
+   public static void ChecarMenorEdad(int edad)throws EdadMenorException{
+       if (edad<18)throw new EdadMenorException();
+   }     
     
-}
+
 }

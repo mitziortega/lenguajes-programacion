@@ -17,13 +17,17 @@ public class ProbarMiExcepcion {
        try {  
            Cliente c=new Cliente();
       c.setEdad(-19);
-        } catch (ValorNegativoException ex) {
+        } 
+       catch (ValorNegativoException ex) {
             System.out.println(ex.getMessage());
-           
-        }
-   
-                }
+        
+        } 
+       catch (EdadMenorException ex) {
+            System.out.println(ex.getMessage());
+          }
+    }
     
+
     
  
     
